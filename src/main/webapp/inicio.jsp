@@ -11,5 +11,12 @@
 </head>
 <body>
     
+    <br/>
+    <h1>ONG - Organização Não Governamental</h1><br/>
+    <img src="image/ong.jpg" width="500" height="250"><br/>
+    <button>Sedes</button><br/>
+    <button>Membros</button><br/>
+    <button>Atividades</button><br/>
+
 </body>
 </html>>
