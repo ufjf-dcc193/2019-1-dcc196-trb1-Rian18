@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Início - Trabalho 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"rel="stylesheet">
+    <script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     
