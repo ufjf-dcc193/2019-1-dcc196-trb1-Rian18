@@ -17,5 +17,12 @@ public class ControllerPrincipal {
         return mv;
     }
 
+    @RequestMapping("sedes.html")
+    public ModelAndView sedes ()
+    {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sedes");
+        return mv;
+    }
     
 }
