@@ -20,10 +20,10 @@ public class Atividade {
     private LocalDate dataInicio;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataFim;
-    private Integer totalHorasAssistencial;
-    private Integer totalHorasJuridica;
-    private Integer totalHorasFinanceira;
-    private Integer totalHorasExecutiva;
+    private Integer horasAssitencial;
+    private Integer horasJuridica;
+    private Integer horasFinanceira;
+    private Integer horasExecutiva;
 
     public Atividade() {
 
@@ -34,10 +34,10 @@ public class Atividade {
         this.descricao = descricao;
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
-        this.totalHorasAssistencial = totalHorasAssistencial;
-        this.totalHorasJuridica = totalHorasJuridica;
-        this.totalHorasFinanceira = totalHorasFinanceira;
-        this.totalHorasExecutiva = totalHorasExecutiva;
+        this.horasAssitencial = totalHorasAssistencial;
+        this.horasJuridica = totalHorasJuridica;
+        this.horasFinanceira = totalHorasFinanceira;
+        this.horasExecutiva = totalHorasExecutiva;
     }
 
     public Long getId() {
@@ -80,36 +80,36 @@ public class Atividade {
         this.dataFim = dataFim;
     }
 
-    public Integer getTotalHorasAssistencial() {
-        return totalHorasAssistencial;
+    public Integer getHorasAssistencial() {
+        return horasAssitencial;
     }
 
-    public void setTotalHorasAssistencial(Integer totalHorasAssistencial) {
-        this.totalHorasAssistencial = totalHorasAssistencial;
+    public void setHorasAssistencial(Integer totalHorasAssistencial) {
+        this.horasAssitencial = totalHorasAssistencial;
     }
 
-    public Integer getTotalHorasJuridica() {
-        return totalHorasJuridica;
+    public Integer getHorasJuridica() {
+        return horasJuridica;
     }
 
-    public void setTotalHorasJuridica(Integer totalHorasJuridica) {
-        this.totalHorasJuridica = totalHorasJuridica;
+    public void setHorasJuridica(Integer totalHorasJuridica) {
+        this.horasJuridica = totalHorasJuridica;
     }
 
-    public Integer getTotalHorasFinanceira() {
-        return totalHorasFinanceira;
+    public Integer getHorasFinanceira() {
+        return horasFinanceira;
     }
 
-    public void setTotalHorasFinanceira(Integer totalHorasFinanceira) {
-        this.totalHorasFinanceira = totalHorasFinanceira;
+    public void setHorasFinanceira(Integer totalHorasFinanceira) {
+        this.horasFinanceira = totalHorasFinanceira;
     }
 
-    public Integer getTotalHorasExecutiva() {
-        return totalHorasExecutiva;
+    public Integer getHorasExecutiva() {
+        return horasExecutiva;
     }
 
-    public void setTotalHorasExecutiva(Integer totalHorasExecutiva) {
-        this.totalHorasExecutiva = totalHorasExecutiva;
+    public void setHorasExecutiva(Integer totalHorasExecutiva) {
+        this.horasExecutiva = totalHorasExecutiva;
     }
 
     public Sede getSede() {
