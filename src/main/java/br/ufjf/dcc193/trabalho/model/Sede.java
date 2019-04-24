@@ -1,4 +1,4 @@
-package br.ufjf.dcc193.trabalho;
+package br.ufjf.dcc193.trabalho.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
