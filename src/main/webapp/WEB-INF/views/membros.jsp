@@ -43,7 +43,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h6>Cadastro</h6>
-                <form class="form" method="post" action="/sede-cadastrar.html">
+                <form class="form" method="post" action="/membro_cadastrar.html">
                     <div class="form-group">
                         <label for="sede">Sede do Membro</label>
                         <select id="sede" name='sede' class="form-control">
@@ -116,9 +116,7 @@
             </tbody>
         </table>
 
-
-
-        <div class="col"></div>
+       <div class="col"></div>
 
     </div>
 
