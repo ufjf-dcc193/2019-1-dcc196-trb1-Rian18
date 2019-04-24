@@ -27,7 +27,7 @@
         <h5>Cadastre uma sede ou visualize informações sobre já cadastradas!</h5>
       </div>
       <div class="col">
-        <img src="image/gerenciamento.jpg" width="200" height="100"><br />
+        <img src="image/relogio.jpg" width="150" height="150"><br />
       </div>
     </div>
 
@@ -44,7 +44,7 @@
         <th>Jurídica</th>
         <th>Financeira</th>
         <th>Executiva</th>
-        <th colspan="2"></th>
+        
       </thead>
       <tbody>
         <c:forEach var="total" items="${totalHoras}">
@@ -54,6 +54,7 @@
             <td>${total.totalJuridica}</td>
             <td>${total.totalFinanceira}</td>
             <td>${total.totalExecutiva}</td>
+         
                    
 
           </tr>

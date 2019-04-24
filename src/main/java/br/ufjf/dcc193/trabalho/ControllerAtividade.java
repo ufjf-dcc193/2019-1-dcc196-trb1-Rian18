@@ -82,7 +82,7 @@ public class ControllerAtividade {
         List<Totalizador> totalHoras = new ArrayList<>();
         for (Sede sede : sedes) {
             Integer tAssistencial= atividadeRep.somaTAssistencial(sede.getId());
-            Integer tJuridica= atividadeRep.somaTExecutiva(sede.getId());
+            Integer tJuridica= atividadeRep.somaTJuridica(sede.getId());
             Integer tFinanceira= atividadeRep.somaTFinanceira(sede.getId());
             Integer tExecutiva = atividadeRep.somaTExecutiva(sede.getId());
             totalHoras.add(new Totalizador(sede,tAssistencial,tJuridica,tFinanceira,tExecutiva));

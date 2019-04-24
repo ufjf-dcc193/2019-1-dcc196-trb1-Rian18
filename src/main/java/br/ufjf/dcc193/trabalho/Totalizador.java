@@ -8,16 +8,24 @@ public class Totalizador {
     private Integer totalJuridica;
     private Integer totalFinanceira;
     private Integer totalExecutiva;
+   
 
     public Totalizador() {
     }
 
-    public Totalizador(Sede sede, Integer totalAssistencial, Integer totalJuridica, Integer totalFinanceira, Integer totalExecutiva) {
+    
+    
+
+   
+
+    public Totalizador(Sede sede, Integer totalAssistencial, Integer totalJuridica, Integer totalFinanceira,
+            Integer totalExecutiva) {
         this.sede = sede;
         this.totalAssistencial = totalAssistencial;
         this.totalJuridica = totalJuridica;
         this.totalFinanceira = totalFinanceira;
         this.totalExecutiva = totalExecutiva;
+        
     }
 
    
