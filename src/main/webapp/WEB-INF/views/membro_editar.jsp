@@ -23,11 +23,9 @@
         <div class="row">
             <div class="col">
                 <h3>Membros</h3><br />
-                <h5>Edite ou delete um membro já cadastrado!</h5>
+                <h5>Edite um membro já cadastrado!</h5>
             </div>
-            <div class="col">
-                <img src="image/" width="100" height="100"><br />
-            </div>
+           
         </div>
 
         <div class="row">
