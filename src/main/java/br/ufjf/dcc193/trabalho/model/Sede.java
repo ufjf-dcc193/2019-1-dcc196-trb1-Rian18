@@ -11,20 +11,35 @@ public class Sede {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String nomefantasia;
-    private String endereco, bairro, cidade;
+    private String endereco, bairro, cidade, uf;
     private String telefone;
     private String endweb;
 
-    public Sede()
-    {
+    public Sede() {
 
     }
-    public Sede(String nomeFantasia,String endereco,String bairro, String cidade, String telefone, String endweb)
+
+    /**
+     * @return the uf
+     */
+    public String getUf() {
+        return uf;
+    }
+
+    /**
+     * @param uf the uf to set
+     */
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public Sede(String nomeFantasia, String endereco, String bairro, String cidade, String uf, String telefone, String endweb)
     {
         this.nomefantasia = nomeFantasia;
         this.endereco = endereco;
         this.bairro = bairro;
         this.cidade = cidade;
+        this.uf = uf;
         this.telefone = telefone;
         this.endweb = endweb;
     }
