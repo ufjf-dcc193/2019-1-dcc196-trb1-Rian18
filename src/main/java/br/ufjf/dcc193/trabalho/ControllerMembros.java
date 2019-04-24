@@ -51,10 +51,12 @@ public class ControllerMembros {
         return new RedirectView("/membros.html?cadastrado=true");
     }
     
-    @GetMapping("membro_editar.html/{id}")
-    public ModelAndView membroAlterar(@PathVariable Long id) {
+    @GetMapping("membro_editar.html/{idMembro}")
+    public ModelAndView membroAlterar(@PathVariable Long idMembro) {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("membro", membroRep.getOne(id));
+        List<Sede> sedes = sedeRep.findAll();
+        mv.addObject("sedes",sedes);
+        mv.addObject("membro", membroRep.getOne(idMembro));
         mv.setViewName("membro_editar");
         return mv;
     }

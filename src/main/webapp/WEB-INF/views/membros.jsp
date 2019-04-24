@@ -109,7 +109,7 @@
                         <td>${membro.funcao}</td>
                         <td>${membro.email}</td>
                         <td>${membro.sede.nomefantasia}</td>
-                        <td><a href="membro_editar.html/${sede.id}" class="btn btn-primary">Editar</a></td>
+                        <td><a href="membro_editar.html/${membro.idMembro}" class="btn btn-primary">Editar</a></td>
                    </tr>
                 </c:forEach>
             </tbody>
