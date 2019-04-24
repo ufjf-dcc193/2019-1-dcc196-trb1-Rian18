@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
@@ -42,4 +43,17 @@ public class ControllerSede {
         return new RedirectView("/sedes.html?cadastrado=true");
     }
     
+    @GetMapping("sede_editar.html/{id}")
+    public ModelAndView sedeAlterar(@PathVariable Long id) {
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("sede", sedeRep.getOne(id));
+        mv.setViewName("sedes_editar");
+        return mv;
+    }
+
+    @PostMapping("sede_editar.html")
+    public RedirectView sedeAlterarPost(@Valid  Sede sede) {
+        sedeRep.save(sede);
+        return new RedirectView("/sedes.html?alterado=true");
+    }
 }
