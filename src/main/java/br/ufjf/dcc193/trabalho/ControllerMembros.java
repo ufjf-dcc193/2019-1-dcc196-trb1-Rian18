@@ -66,4 +66,10 @@ public class ControllerMembros {
         membroRep.save(membro);
         return new RedirectView("/membros.html?alterado=true");
     }
+
+    @GetMapping("membro_deletar.html/{id}")
+    public RedirectView membroDeletar(@PathVariable Long id) {
+        membroRep.deleteById(id);
+        return new RedirectView("/membros.html?excluido=true");
+    }
 }

@@ -24,7 +24,7 @@
                 <h5>Cadastre um membro ou visualize informações sobre já cadastradas!</h5>
             </div>
             <div class="col">
-                <img src="image/" width="100" height="100"><br />
+                <img src="image/membros.jpg" width="200" height="100"><br />
             </div>
         </div>
 
@@ -68,7 +68,7 @@
                     <input type="text" name="saída" value="">
                     <br>
                     <br><br>
-                    <input type="submit" value="Salvar">
+                    <input type="submit" class="btn btn-success" value="Salvar">
                 </form>
             </div>
         </c:if>
@@ -91,7 +91,8 @@
         </c:if>
         <br>
         <div class="row container-fluid col-4">
-            <a href="/membros.html/cadastrar" class="btn btn-success">Cadastrar Membro <i class="fas fa-user-plus"></i></a>
+            <a href="/index.html" class="btn btn-danger"> Voltar <i class="fas fa-user-plus"></i></a>
+            <a href="/membros.html/cadastrar" class="btn btn-success">Novo Membro <i class="fas fa-user-plus"></i></a>
         </div>
         <br>
         <table class="table">
@@ -109,13 +110,15 @@
                         <td>${membro.funcao}</td>
                         <td>${membro.email}</td>
                         <td>${membro.sede.nomefantasia}</td>
+                        <td> <a href="membro_deletar.html/${membro.idMembro}" class="btn btn-danger">Deletar Membro</a>
+                        </td>
                         <td><a href="membro_editar.html/${membro.idMembro}" class="btn btn-primary">Editar</a></td>
-                   </tr>
+                    </tr>
                 </c:forEach>
             </tbody>
         </table>
 
-       <div class="col"></div>
+        <div class="col"></div>
 
     </div>
 

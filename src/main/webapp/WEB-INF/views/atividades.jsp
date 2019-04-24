@@ -24,7 +24,7 @@
                 <h6>Cadastre uma atividade ou visualize informações sobre as já cadastradas!</h6>
             </div>
             <div class="col">
-                <img src="image/" width="100" height="100"><br />
+                <img src="image/atividades.jpg" width="100" height="100"><br />
             </div>
         </div>
 
@@ -77,7 +77,7 @@
                     <input type="text" name="horasExecutiva" value="">
                     <br>
                     <br><br>
-                    <input type="submit" value="Salvar">
+                    <input type="submit" class="btn btn-success" value="Salvar">
                 </form>
             </div>
         </c:if>
@@ -100,7 +100,9 @@
         </c:if>
         <br>
         <div class="row container-fluid col-4">
-            <a href="/atividades.html/cadastrar" class="btn btn-success">Nova Atividade <i class="fas fa-user-plus"></i></a>
+            <a href="/index.html" class="btn btn-danger"> Voltar <i class="fas fa-user-plus"></i></a>
+            <a href="/atividades.html/cadastrar" class="btn btn-success">Nova Atividade <i
+                    class="fas fa-user-plus"></i></a>
         </div>
         <br>
         <table class="table">
@@ -126,13 +128,14 @@
                         <td>${atividade.horasFinanceira}</td>
                         <td>${atividade.horasExecutiva}</td>
                         <td>${atividade.sede.nomefantasia}</td>
+                        <td> <a href="atividade_deletar.html/${atividade.id}" class="btn btn-danger">Deletar Atividade</a></td>
                         <td><a href="atividade_editar.html/${atividade.id}" class="btn btn-primary">Editar</a></td>
-                   </tr>
+                    </tr>
                 </c:forEach>
             </tbody>
         </table>
 
-       <div class="col"></div>
+        <div class="col"></div>
 
     </div>
 

@@ -1,5 +1,7 @@
 package br.ufjf.dcc193.trabalho;
 
+
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -67,4 +69,25 @@ public class ControllerAtividade {
         atividadeRep.save(atividade);
         return new RedirectView("/atividades.html?alterado=true");
     }
+
+    @GetMapping("atividade_deletar.html/{id}")
+    public RedirectView atividadeDeletar(@PathVariable Long id) {
+        atividadeRep.deleteById(id);
+        return new RedirectView("/atividades.html?excluido=true");
+    }
+       
+    @GetMapping("total_horas.html")
+    public ModelAndView TotalHoras() {
+        List<Sede> sedes = sedeRep.findAll();
+        List<Totalizador> totalHoras = new ArrayList<>();
+        for (Sede sede : sedes) {
+            Integer tAssistencial= atividadeRep.somaTAssistencial(sede.getId());
+            Integer tJuridica= atividadeRep.somaTExecutiva(sede.getId());
+            Integer tFinanceira= atividadeRep.somaTFinanceira(sede.getId());
+            Integer tExecutiva = atividadeRep.somaTExecutiva(sede.getId());
+            totalHoras.add(new Totalizador(sede,tAssistencial,tJuridica,tFinanceira,tExecutiva));
+        }
+        return new ModelAndView().addObject("totalHoras",totalHoras);
+    }
+
 }

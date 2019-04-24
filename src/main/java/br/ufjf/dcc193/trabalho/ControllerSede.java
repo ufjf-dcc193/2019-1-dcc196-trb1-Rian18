@@ -56,4 +56,13 @@ public class ControllerSede {
         sedeRep.save(sede);
         return new RedirectView("/sedes.html?alterado=true");
     }
+
+    @GetMapping("sede_deletar.html/{id}")
+    public RedirectView sedeDeletar(@PathVariable Long id) {
+        sedeRep.deleteById(id);
+        return new RedirectView("/sedes.html?excluido=true");
+    }
+       
+   
+   
 }

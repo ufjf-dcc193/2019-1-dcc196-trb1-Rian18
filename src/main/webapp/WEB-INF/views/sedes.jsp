@@ -24,7 +24,7 @@
         <h5>Cadastre uma sede ou visualize informações sobre já cadastradas!</h5>
       </div>
       <div class="col">
-        <img src="image/gerenciamento.jpg" width="150" height="100"><br />
+        <img src="image/gerenciamento.jpg" width="200" height="100"><br />
       </div>
     </div>
 
@@ -57,7 +57,7 @@
           <input type="text" name="cidade" value="">
           <br>
           Estado:<br>
-          <input type="text" name="estado" value="">
+          <input type="text" name="uf" value="">
           <br>
           Telefone:<br>
           <input type="text" name="telefone" value="">
@@ -65,7 +65,7 @@
           Endereço na web:<br>
           <input type="text" name="endweb" value="">
           <br><br>
-          <input type="submit" value="Salvar">
+          <input type="submit" class="btn btn-success" value="Salvar">
         </form>
       </div>
     </c:if>
@@ -88,7 +88,9 @@
     </c:if>
     <br>
     <div class="row container-fluid col-4">
-      <a href="/sedes.html/cadastrar" class="btn btn-success">Cadastrar Sede <i class="fas fa-user-plus"></i></a>
+      <a href="/index.html" class="btn btn-danger"> Voltar <i class="fas fa-user-plus"></i></a>
+      <a href="/total_horas.html/" class="btn btn-success">Total de Horas <i class="fas fa-user-plus"></i></a>
+      <a href="/sedes.html/cadastrar" class="btn btn-success">Nova Sede <i class="fas fa-user-plus"></i></a>
     </div>
     <br>
     <table class="table">
@@ -108,8 +110,9 @@
             <td>${sede.telefone}</td>
             <td>${sede.cidade}</td>
             <td>${sede.uf}</td>
+            <td> <a href="sede_deletar.html/${sede.id}" class="btn btn-danger">Deletar Sede</a></td>
             <td><a href="sede_editar.html/${sede.id}" class="btn btn-primary">Editar</a></td>
-            <td><a href="sede-deletar.html/${sede.id}" class="btn btn-danger">Deletar</a></td>
+
           </tr>
         </c:forEach>
       </tbody>
