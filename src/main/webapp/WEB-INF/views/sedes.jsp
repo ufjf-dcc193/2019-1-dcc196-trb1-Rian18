@@ -24,7 +24,7 @@
         <h5>Cadastre uma sede ou visualize informações sobre já cadastradas!</h5>
       </div>
       <div class="col">
-        <img src="image/" width="100" height="100"><br />
+        <img src="image/gerenciamento.jpg" width="150" height="100"><br />
       </div>
     </div>
 

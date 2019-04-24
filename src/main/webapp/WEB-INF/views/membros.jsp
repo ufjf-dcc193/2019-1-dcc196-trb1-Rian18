@@ -53,7 +53,7 @@
                         </select>
                     </div>
                     Nome:<br>
-                    <input type="text" name="nomecompleto" value="">
+                    <input type="text" name="nome" value="">
                     <br>
                     Função: <br>
                     <input type="text" name="funcao" value="">
@@ -108,10 +108,9 @@
                         <td>${membro.nome}</td>
                         <td>${membro.funcao}</td>
                         <td>${membro.email}</td>
-                        <td>${membro.sede}</td>
+                        <td>${membro.sede.nomefantasia}</td>
                         <td><a href="membro_editar.html/${sede.id}" class="btn btn-primary">Editar</a></td>
-                        <td><a href="sede-deletar.html/${sede.id}" class="btn btn-danger">Deletar</a></td>
-                    </tr>
+                   </tr>
                 </c:forEach>
             </tbody>
         </table>

@@ -13,11 +13,15 @@
 <body>
     
     <br/>
-    <h1>ONG - Organização Não Governamental</h1><br/>
-    <img src="image/ong.jpg" width="500" height="250"><br/>
-    <button>Sedes</button><br/>
-    <button>Membros</button><br/>
-    <button>Atividades</button><br/>
+    <center><h1>ONG - Organização Não Governamental</h1></center><br/><br/>
+    <center><img src="image/ong.jpg" width="500" height="250"></center><br/><br/>
+    <center><h5><a href="/sedes.html">Sedes</a></h5></center> <br/><br/>
+    <center><h5><a href="/membros.html">Membros</a></h5></center> <br/><br/>
+    <center><h5><a href="/atividades.html">Atividades</a></h5></center> <br/><br/><br/>
+   
+
+    <center><h5><a href="https://github.com/ufjf-dcc193/2019-1-dcc196-trb1-Rian18.git">Rian das Dores Alves - 201676040</a></h5></center> <br/><br/>
+    
 
 </body>
 </html>
